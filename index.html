@@ -23,17 +23,57 @@
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: iPortfolio
-  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-  * Updated: Jun 29 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <style>
+    .business-solutions-container {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+  
+    .business-solutions {
+      list-style: none;
+      padding: 0;
+      width: 48%;
+    }
+  
+    .business-solutions li {
+      font-size: 16px;
+      margin: 8px 0;
+      display: flex;
+      align-items: center;
+    }
+  
+    .business-solutions i {
+      color: #007bff;
+      margin-right: 10px;
+      font-size: 18px;
+    }
+  
+    .section-title h2 {
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+  
+    .section-title p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+  
+    @media (max-width: 768px) {
+      .business-solutions-container {
+        flex-direction: column;
+      }
+      
+      .business-solutions {
+        width: 100%;
+      }
+    }
+  </style>
 </head>
 
 <body class="index-page">
@@ -64,7 +104,7 @@
         <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
         <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
         <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
-        <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
+        <!-- <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li> -->
         <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li>
         <!-- <li class="dropdown"><a href="#"><i class="bi bi-menu-button navicon"></i> <span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
           <ul>
@@ -98,25 +138,54 @@
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <h2>Krunal M. Pawar</h2>
-        <p>I'm <span class="typed" data-typed-items="Laravel Developer, Vue.js Developer, Full-Stack Developer, Freelancer, SaaS Builder">Developer</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+        <p>I'm <span class="typed" data-typed-items="Laravel Developer, Vue.js Developer, Full-Stack Developer, SaaS Builder">Developer</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
       </div>
 
     </section><!-- /Hero Section -->
 
     <!-- About Section -->
-    <section id="about" class="about section">
+    <section id="about" class="about section" >
 
       <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
+      <div class="container section-title" data-aos="fade-up" style="padding-bottom: 0;">
         <h2>About</h2>
-        <p>I am a passionate Full-Stack Developer specializing in Laravel, Vue.js, and modern web technologies. I focus on building scalable SaaS applications, CRM systems, and high-performance web solutions that enhance business growth.</p>
-      </div><!-- End Section Title -->
+        <p>
+          I am a passionate <strong>Full-Stack Developer</strong> specializing in Laravel, Vue.js, and modern web technologies.  
+          I focus on building <strong>scalable SaaS applications</strong>, CRM systems, and high-performance web solutions that help businesses streamline operations, boost productivity, and drive growth.
+        </p>
+      
+        <p style="margin-top: 20px;"><strong>Business Software Solutions I Develop:</strong></p>
+        
+        <div class="business-solutions-container" style="margin-left: 20px;">
+          <ul class="business-solutions">
+            <li><i class="fa-solid fa-briefcase"></i> CRM</li>
+            <li><i class="fa-solid fa-layer-group"></i> ERP</li>
+            <li><i class="fa-solid fa-users"></i> HRMS</li>
+            <li><i class="fa-solid fa-boxes-stacked"></i> Inventory Management</li>
+            <li><i class="fa-solid fa-list-check"></i> Task & Project Management</li>
+            <li><i class="fa-solid fa-cart-shopping"></i> E-commerce Platforms</li>
+            <li><i class="fa-solid fa-cash-register"></i> POS Systems</li>
+            <li><i class="fa-solid fa-graduation-cap"></i> LMS</li>
+          </ul>
+          
+          <ul class="business-solutions">
+            <li><i class="fa-solid fa-hospital"></i> Healthcare Systems</li>
+            <li><i class="fa-solid fa-file-invoice-dollar"></i> Accounting Software</li>
+            <li><i class="fa-solid fa-money-bill"></i> Payroll Management</li>
+            <li><i class="fa-solid fa-calendar-check"></i> Booking & Appointments</li>
+            <li><i class="fa-solid fa-building"></i> Real Estate Management</li>
+            <li><i class="fa-solid fa-industry"></i> Manufacturing Systems</li>
+            <li><i class="fa-solid fa-gavel"></i> Legal & Compliance</li>
+            <li><i class="fa-solid fa-bullhorn"></i> Marketing Automation</li>
+          </ul>
+        </div>
+      </div>
     
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <!-- <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row gy-4 justify-content-center">
-          <!-- <div class="col-lg-4">
+          <div class="col-lg-4">
             <img src="assets/img/my-profile-img.jpg" class="img-fluid" alt="My Profile">
-          </div> -->
+          </div> 
           <div class="col-lg-12 content">
             <h2>Full-Stack Developer & SaaS Architect</h2>
             <p class="fst-italic py-3">
@@ -144,7 +213,7 @@
             </p>
           </div>
         </div>
-      </div>
+      </div> -->
     
     </section><!-- /About Section -->
     
@@ -196,9 +265,8 @@
 <section id="skills" class="skills section light-background" style="padding-top: 0;">
 
   <!-- Section Title -->
-  <div class="container section-title" data-aos="fade-up">
+  <div class="container section-title" data-aos="fade-up" style="padding-bottom: 2px;">
     <h2>Skills</h2>
-    <p>Expert in full-stack development, SaaS architecture, and business automation solutions.</p>
   </div><!-- End Section Title -->
 
   <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -229,7 +297,7 @@
         </div><!-- End Skills Item -->
 
         <div class="progress">
-          <span class="skill"><span>JavaScript</span> <i class="val">80%</i></span>
+          <span class="skill"><span>JavaScript & jQuery</span> <i class="val">80%</i></span>
           <div class="progress-bar-wrap">
             <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
           </div>
@@ -247,7 +315,7 @@
         </div><!-- End Skills Item -->
 
         <div class="progress">
-          <span class="skill"><span>Multi-Tenancy (Stancl/Tenancy)</span> <i class="val">85%</i></span>
+          <span class="skill"><span>WordPress</span> <i class="val">85%</i></span>
           <div class="progress-bar-wrap">
             <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
           </div>
@@ -261,7 +329,7 @@
         </div><!-- End Skills Item -->
 
         <div class="progress">
-          <span class="skill"><span>Node.js</span> <i class="val">60%</i></span>
+          <span class="skill"><span>Node.js</span> <i class="val">50%</i></span>
           <div class="progress-bar-wrap">
             <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
           </div>
@@ -277,7 +345,7 @@
 
 
    <!-- Resume Section -->
-<section id="resume" class="resume section">
+<section id="resume" class="resume section" style="padding-top: 0;">
 
   <!-- Section Title -->
   <div class="container section-title" data-aos="fade-up">
@@ -353,17 +421,17 @@
 
 
     <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio section light-background">
+    <!-- <section id="portfolio" class="portfolio section light-background"> -->
 
       <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Portfolio</h2>
-        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-      </div><!-- End Section Title -->
+      <!-- <div class="container section-title" data-aos="fade-up"> -->
+        <!-- <h2>Portfolio</h2> -->
+        <!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> -->
+      <!-- </div>End Section Title -->
 
-      <div class="container">
+      <!-- <div class="container">
 
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order"> -->
 
           <!-- <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
             <li data-filter="*" class="filter-active">All</li>
@@ -374,7 +442,7 @@
           </ul> -->
           <!-- End Portfolio Filters -->
 
-          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+          <!-- <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
               <div class="portfolio-content h-100">
@@ -386,7 +454,7 @@
                   <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>End Portfolio Item -->
 
             <!-- <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
               <div class="portfolio-content h-100">
@@ -531,16 +599,16 @@
             </div> -->
             <!-- End Portfolio Item -->
 
-          </div><!-- End Portfolio Container -->
+          <!-- </div>End Portfolio Container
 
         </div>
 
       </div>
 
-    </section><!-- /Portfolio Section -->
+    </section>-->
 
   <!-- Services Section -->
-<section id="services" class="services section">
+<section id="services" class="services section" style="padding-top: 0;">
 
   <!-- Section Title -->
   <div class="container section-title" data-aos="fade-up">
@@ -735,7 +803,7 @@
 
         <div class="row gy-4">
 
-          <div class="col-lg-5">
+          <!-- <div class="col-lg-5">
 
             <div class="info-wrap">
               <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
@@ -745,29 +813,25 @@
                   <p>Ahwa, Gujarat</p>
                   <p>Nashik, Maharashtra</p>
                 </div>
-              </div><!-- End Info Item -->
-
+              </div>
               <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
                 <i class="bi bi-telephone flex-shrink-0"></i>
                 <div>
                   <h3>Call Us</h3>
                   <p><a href="tel:+916351716007">+91 6351716007</a></p>
                 </div>
-              </div><!-- End Info Item -->
-
+              </div>
               <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
                 <i class="bi bi-envelope flex-shrink-0"></i>
                 <div>
                   <h3>Email Us</h3>
                   <a><a href="mailto:kmpawar0004@email.com">kmpawar0004@gmail.com</a></p>
                 </div>
-              </div><!-- End Info Item -->
-
-              <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus" frameborder="0" style="border:0; width: 100%; height: 270px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+              </div>
             </div>
-          </div>
-
-          <div class="col-lg-7">
+          </div> -->
+          <div class="col-lg-3"></div>
+          <div class="col-lg-6">
             <form  action="https://formspree.io/f/xdkeodjk"
             method="POST" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
               <div class="row gy-4">
@@ -805,7 +869,7 @@
               </div>
             </form>
           </div><!-- End Contact Form -->
-
+          <div class="col-lg-3"></div>
         </div>
 
       </div>
